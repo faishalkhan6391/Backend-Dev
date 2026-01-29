@@ -1,0 +1,35 @@
+Assessment Questions – File System Operations
+
+1. What is the difference between synchronous and asynchronous file operations?
+Synchronous file operations block the execution of the program until the task is completed. The program waits for the file operation to finish before moving to the next line of code.
+Asynchronous file operations do not block execution. They allow the program to continue running while the file operation completes in the background using callbacks, promises, or async/await.
+
+2. When should you use file streams instead of reading the entire file?
+File streams should be used when working with large files, continuous data, or when memory efficiency is important. Streams read and process data in small chunks instead of loading the entire file into memory at once.
+
+3. Explain the purpose of the ‘utf8’ encoding parameter in file operations.
+The ‘utf8’ encoding parameter tells Node.js to read or write the file as human-readable text. Without specifying encoding, file data is returned as a Buffer instead of a string.
+
+4. What are the common error codes in file system operations and what do they mean?
+ENOENT – File or directory does not exist  
+EACCES – Permission denied  
+EEXIST – File already exists  
+EMFILE – Too many files opened at once  
+EPERM – Operation not permitted  
+
+5. How would you safely delete a directory with all its contents?
+A directory and all its contents can be safely deleted using the recursive option in Node.js:
+fs.rmSync("folderName", { recursive: true, force: true });
+
+6. Explain the concept of piping in streams with an example.
+Piping is used to transfer data directly from one stream to another without storing it in memory.
+Example:
+readStream.pipe(writeStream);
+This reads data from one file and writes it to another file efficiently.
+
+7. Why is it important to handle errors in file operations?
+Handling errors prevents application crashes, helps identify issues like missing files or permission problems, and ensures the program runs reliably and securely.
+
+8. What is the difference between writeFile and appendFile methods?
+writeFile overwrites existing file content or creates a new file.
+appendFile adds new data to the end of a file without removing existing content.
