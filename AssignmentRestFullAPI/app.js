@@ -224,6 +224,13 @@ app.delete("/authors/:id", (req, res) => {
   res.json({ message: "Author deleted successfully" });
 });
 
+app.get("/profile",(req,res)=>{
+  if(!req.session.user){
+    return res.status(401).send("User not logged in")
+  }
+  res.send(`welcome $`)
+})
+
 /* =========================
    Server
 ========================= */
