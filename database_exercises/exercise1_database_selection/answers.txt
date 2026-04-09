@@ -1,0 +1,16 @@
+Exercise 1: Database Selection
+
+1. Online banking system → SQL
+   Reason: Strong consistency, ACID transactions, relational data.
+
+2. Social media platform → NoSQL
+   Reason: High scalability, flexible schema, large unstructured data.
+
+3. Real-time chat application → NoSQL
+   Reason: High availability, low latency, real-time data.
+
+4. Hospital patient records → SQL
+   Reason: Data integrity, structured relationships, compliance.
+
+5. IoT sensor data collection → NoSQL
+   Reason: Massive data ingestion, scalability, time-series data.

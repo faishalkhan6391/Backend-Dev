@@ -1,0 +1,6 @@
+Exercise 2: CAP Theorem
+
+1. Stock trading platform → Consistency + Partition Tolerance (CP)
+2. Content delivery network → Availability + Partition Tolerance (AP)
+3. Airline booking system → Consistency + Partition Tolerance (CP)
+4. Video streaming service → Availability + Partition Tolerance (AP)

@@ -1,0 +1,8 @@
+Exercise 4: JSON to BSON
+
+{
+  "orderId": ObjectId("12345"),
+  "orderDate": ISODate("2024-01-15T00:00:00Z"),
+  "totalAmount": NumberDecimal("99.99"),
+  "items": ["item1", "item2"]
+}
